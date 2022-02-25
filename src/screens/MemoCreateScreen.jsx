@@ -6,12 +6,12 @@ import {
 import AppBar from '../components/Appbar';
 import CircleButton from '../components/CircleButton';
 
-export default function MemoEditScreen() {
+export default function MemoCreateScreen() {
   return (
     <KeyboardAvoidingView style={styles.container}>
       <AppBar />
       <View style={styles.inputContainer}>
-        <TextInput value="買い物リスト" multiline style={styles.input} behavior="height" />
+        <TextInput value="" multiline style={styles.input} behavior="height" />
       </View>
       <CircleButton name="check" />
     </KeyboardAvoidingView>
