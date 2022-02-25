@@ -1,6 +1,8 @@
 // import { Feather } from '@expo/vector-icons';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {
+  StyleSheet, Text, View, TouchableOpacity,
+} from 'react-native';
 
 import Icon from './Icon';
 
@@ -12,8 +14,20 @@ export default function MemoList() {
           <Text style={styles.memoListItemTitle}>買い物リスト</Text>
           <Text style={styles.memoListItemDate}>2021年2月25日</Text>
         </View>
-        <View>
+        <TouchableOpacity>
           <Icon name="delete" size={16} color="#B0B0B0" />
+        </TouchableOpacity>
+      </View>
+
+      <View>
+        <View style={styles.memoListItem}>
+          <View>
+            <Text style={styles.memoListItemTitle}>買い物リスト</Text>
+            <Text style={styles.memoListItemDate}>2021年2月25日</Text>
+          </View>
+          <TouchableOpacity>
+            <Icon name="delete" size={16} color="#B0B0B0" />
+          </TouchableOpacity>
         </View>
       </View>
 
@@ -23,21 +37,9 @@ export default function MemoList() {
             <Text style={styles.memoListItemTitle}>買い物リスト</Text>
             <Text style={styles.memoListItemDate}>2021年2月25日</Text>
           </View>
-          <View>
+          <TouchableOpacity>
             <Icon name="delete" size={16} color="#B0B0B0" />
-          </View>
-        </View>
-      </View>
-
-      <View>
-        <View style={styles.memoListItem}>
-          <View>
-            <Text style={styles.memoListItemTitle}>買い物リスト</Text>
-            <Text style={styles.memoListItemDate}>2021年2月25日</Text>
-          </View>
-          <View>
-            <Icon name="delete" size={16} color="#B0B0B0" />
-          </View>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
