@@ -28,11 +28,11 @@ export default function MemoListScreen(props) {
       const unsubscribe = ref.onSnapshot((snapshot) => {
         const userMemos = [];
         // データが入ってるか確認
-        console.log('データが空？', snapshot.empty);
+        // console.log('データが空？', snapshot.empty);
         snapshot.forEach((doc) => {
           console.log(doc.id, doc.data());
           // データを確認
-          console.log('データが空2？', snapshot.empty);
+          // console.log('データが空2？', snapshot.empty);
           const data = doc.data();
           userMemos.push({
             id: doc.id,
